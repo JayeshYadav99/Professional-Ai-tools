@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useDropzone } from "react-dropzone";
 import { toast } from "react-hot-toast";
 export default function ImageUploadForm() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<null | string>(null);
   const [transformedImage, setTransformedImage] = useState(null);
   const [uploading, setUploading] =useState(false);
 
